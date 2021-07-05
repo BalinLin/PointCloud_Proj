@@ -6,7 +6,7 @@ import time
 
 np.set_printoptions(suppress=True)
 
-inFile = File("/home/yoyo/WGS84.las", mode='r')
+inFile = File("/media/yoyo/harddisk/project/ncsist/WGS84.las", mode='r')
 
 las_offset = inFile.header.offset
 las_scale = inFile.header.scale

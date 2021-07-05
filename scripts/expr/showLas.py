@@ -3,7 +3,7 @@ import numpy as np
 from pypcd import pypcd
 import twd97
 
-inFile = File("/media/yoyo/harddisk/ncisit/WGS84.las", mode='r')
+inFile = File("/media/yoyo/harddisk/project/ncsist/WGS84.las", mode='r')
 
 pointformat = inFile.point_format
 for spec in inFile.point_format:

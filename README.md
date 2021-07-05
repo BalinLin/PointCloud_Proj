@@ -9,9 +9,11 @@
 # Python in ./script
 cd ./script
 
-# Cpp
+# [Cpp](https://blog.csdn.net/sweetorange_/article/details/112242852)
 mkdir build
 cd build
 cmake ..
 make
+cd ..
+build/VoxelPCD twAll_bin.pcd twDown05_bin.pcd 0.5
 ```
