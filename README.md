@@ -1,7 +1,8 @@
 # PointCloud_Proj
 * About `*.las` and `*.pcd` processing.
 
-* `./script/vbox*.py` process IMU info.
+* `./script/exper/vbox*.py` process IMU info.
+* `./script/exper/LasToPcd.py` process WGS84.las to bin.pcd.
 
 
 ## Usage
@@ -9,11 +10,13 @@
 # Python in ./script
 cd ./script
 
-# [Cpp](https://blog.csdn.net/sweetorange_/article/details/112242852)
+# [Cpp build](https://blog.csdn.net/sweetorange_/article/details/112242852)
 mkdir build
 cd build
 cmake ..
 make
 cd ..
+
+# produce voxel data
 build/VoxelPCD twAll_bin.pcd twDown05_bin.pcd 0.5
 ```
