@@ -8,7 +8,10 @@
 ## Usage
 ``` bash
 # Python in ./script
-cd ./script
+git clone https://github.com/BalinLin/PointCloud_Proj.git
+cd PointCloud_Proj
+python scripts/expr/showLas.py
+python scripts/expr/LasToPcd.py
 
 # [Cpp build](https://blog.csdn.net/sweetorange_/article/details/112242852)
 mkdir build
@@ -18,5 +21,5 @@ make
 cd ..
 
 # produce voxel data
-build/VoxelPCD twAll_bin.pcd twDown05_bin.pcd 0.5
+build/src/VoxelPCD twAll_bin.pcd twDown05_bin.pcd 0.5
 ```
