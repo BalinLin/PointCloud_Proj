@@ -6,13 +6,12 @@ import time
 
 np.set_printoptions(suppress=True)
 
-# inFile = File("/media/yoyo/harddisk/project/ncsist/WGS84.las", mode='r')
-inFile = File("/media/yoyo/harddisk/project/v2/NCSIST/WGS84.las", mode='r')
+inFile = File("./WGS84.las", mode='r')
 
 # v1 (270804.94158672367, 2746110.115385094, 301.93) to (270800, 2746100, 300)
 # v2 (304432.11792123807, 2767367.268923381, 32.4) to (304430, 2767360, 30)
-# map_offset = [270800, 2746100, 300]
-map_offset = [304430, 2767360, 30]
+map_offset = [270800, 2746100, 300]
+# map_offset = [304430, 2767360, 30]
 
 las_offset = inFile.header.offset
 las_scale = inFile.header.scale
